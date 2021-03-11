@@ -1,0 +1,83 @@
+.form-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .sign-in__form,.sign-up__form{
+        .title{
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1.8rem;
+            color: rgb(56, 57, 58);
+            text-align: center;
+        }
+        .input-field{
+            display: flex;
+            max-width: 38rem;
+            width: 100%;
+            margin-bottom: 2.2rem;
+            background: #f0f0f0;
+            border-radius: 2.4rem;
+            .icon{
+                width: 15%;
+                position: relative;
+                i{
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 1.6rem;
+                    color: #858080;
+                }
+            }
+            input{
+                color: #5e5c5c;
+                font-weight: 55 0;
+                font-size: 1.6rem;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                padding: 1.5rem 0;
+                width: 85%;
+                &::placeholder{
+                    font-weight: 550;
+                    color: #858585;
+                }
+                &:focus::placeholder{
+                    color: transparent;
+                }
+            }
+        }
+    }
+    .sign-up__form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+        transition: all 0.5s linear;
+        transition-delay: 0.3s;
+        opacity: 0;
+        &.left-move{
+            opacity: 1;
+            left: 20%;
+        }
+    }
+    .sign-in__form{
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%,-50%);
+        transition: all 0.5s linear;
+        transition-delay: 0.3s;
+        &.right-move{
+            left: 60%;
+        }
+    }
+}

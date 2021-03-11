@@ -1,0 +1,40 @@
+.sign-in__social-media{
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        border-radius: 50%;
+        border: 1px solid #000;
+        position: relative;
+        height: 4rem;
+        width: 4rem;
+        transition: all 0.3s linear;
+        &:nth-child(2){
+            margin-right:1rem;
+            margin-left: 2rem;
+        }
+        &:nth-child(3){
+            margin-left: 1rem;
+            margin-right: 2rem;
+        }
+        i{
+            display: inline-block;
+            transition: all 0.3s linear;
+            font-size: 1.6rem;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            color: rgb(92, 89, 89);
+        }
+        &:hover{
+            border: 1px solid rgb(34, 216, 216);
+            i{
+                color: rgb(34, 216, 216);
+            }
+        }
+    }
+}

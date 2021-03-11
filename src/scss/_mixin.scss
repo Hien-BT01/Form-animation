@@ -1,0 +1,14 @@
+@mixin button($color) {
+  padding: 1.2rem 4rem;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  color: #fefefe;
+  background-color: $color;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,15 @@
+@import "./mixin";
+.submit{
+    text-align: center;
+    button{
+        @include button(rgb(46, 204, 204));
+        &:hover{
+            background-color: #2dd1d1ad;
+        }
+    }
+    p{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 550;
+    }
+}
